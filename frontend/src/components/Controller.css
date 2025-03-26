@@ -1,0 +1,41 @@
+.Controller {
+    /*Placement*/
+    margin-top: 10em;
+    justify-content: center;
+
+    /*Background*/
+    background-color: #f0f0f0;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+
+.Button {
+    /*text*/
+    font-weight: 500;
+    font-size: 0.5em;
+    color: #fff;
+
+    /*background*/
+    background-color: green;
+    border-radius: 100em; /*to validate circular corners*/
+    padding: 1em 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.Button:hover {
+    cursor: pointer;
+}
