@@ -58,29 +58,11 @@ function PlusContent({ onSend }: PlusContentProps) {
                 </div>
                 <div className="Inputs">
                     <span className='Input-description'>Enter a value between 0 to 3000</span>
-                    <input
-                        type="number"
-                        className="Input"
-                        placeholder='Number here'
-                        value={altitudeInput}
-                        onChange={(e) => setAltitudeInput(e.target.value)}
-                    />
+                    <input type="number" className="Input" placeholder='Number here' value={altitudeInput} onChange={(e) => setAltitudeInput(e.target.value)}/>
                     <span className='Input-description'>Enter a value between 0 to 360</span>
-                    <input
-                        type="number"
-                        className="Input"
-                        placeholder='Number here'
-                        value={hisInput}
-                        onChange={(e) => setHisInput(e.target.value)}
-                    />
+                    <input type="number" className="Input" placeholder='Number here' value={hisInput} onChange={(e) => setHisInput(e.target.value)}/>
                     <span className='Input-description'>Enter a value between -100 to 100</span>
-                    <input
-                        type="number"
-                        className="Input"
-                        placeholder='Number here'
-                        value={adiInput}
-                        onChange={(e) => setAdiInput(e.target.value)}
-                    />
+                    <input type="number" className="Input" placeholder='Number here' value={adiInput} onChange={(e) => setAdiInput(e.target.value)}/>
                 </div>
             </div>
             <div className="CTAs">

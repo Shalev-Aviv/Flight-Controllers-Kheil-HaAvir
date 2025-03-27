@@ -1,0 +1,116 @@
+.Content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Altitude {
+}
+
+.HSI {
+}
+
+.ADI {
+}
+
+.Bar {
+    position: relative;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, red, green);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 10em;
+    width: 3em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - var(--mask-percentage, 0%));
+    background-color: #fff;
+    z-index: 1;
+}
+
+.Value {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.Circle {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    width: 10em;
+    height: 10em;
+    border-radius: 100em;
+}
+
+.Clock {
+    position: relative;
+    --his-rotation: 0deg;
+}
+.HSI-Numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(-1 * var(--his-rotation)));
+}
+#first, #second, #third, #forth {
+    position: absolute;
+    text-align: center;
+    
+}
+
+#first {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(calc(1 * var(--his-rotation)));
+}
+#second {
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%) rotate(calc(1 * var(--his-rotation)));
+}
+#third {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(calc(1 * var(--his-rotation)));
+}
+#forth {
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%) rotate(calc(1 * var(--his-rotation)));
+}
+
+#first span, #second span, #third span, #forth span {
+    display: inline-block;
+    transform: rotate(calc(1 * var(--his-rotation)));
+}
+
+.Arrow {
+    position: absolute;
+    width: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.View {
+    background: linear-gradient(
+        to bottom,
+        cyan 0%,
+        blue var(--adi-threshold),
+        rgb(120, 59, 31) var(--adi-threshold),
+        rgb(165, 81, 42) 100%
+    );
+}

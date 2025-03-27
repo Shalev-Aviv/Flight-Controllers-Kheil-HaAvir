@@ -9,6 +9,7 @@ function Controller() {
   const [altitudeValue, setAltitudeValue] = useState('');
   const [hisValue, setHisValue] = useState('');
   const [adiValue, setAdiValue] = useState('');
+
   const handlePlusSend = (altitude: string, his: string, adi: string) => {
     setAltitudeValue(altitude);
     setHisValue(his);
@@ -20,7 +21,7 @@ function Controller() {
         setActiveContent(<TextContent altitude={altitudeValue} his={hisValue} adi={adiValue} />);
         break;
       case 'Visual':
-        setActiveContent(<VisualContent />);
+        setActiveContent(<VisualContent altitude={altitudeValue} his={hisValue} adi={adiValue} />);
         break;
       case 'Plus':
         setActiveContent(<PlusContent onSend={handlePlusSend} />);
