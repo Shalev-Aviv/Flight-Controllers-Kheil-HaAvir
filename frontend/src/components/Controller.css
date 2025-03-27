@@ -36,3 +36,7 @@
 .Button:hover {
     cursor: pointer;
 }
+
+.Display-area {
+    margin-top: 0.8em;
+}
