@@ -1,10 +1,10 @@
 # Flight Controllers✈️
 
 ## Overview👀
-This project demonstrates a visual instrument panel built with React and CSS. It features:
-- **Altitude Bar:** A gradient background revealed proportionally based on altitude.
-- **Heading Indicator (HSI):** A compass-like circle with labels that rotate based on the provided heading value.
-- **Attitude Indicator (ADI):** A circle whose color changes instantly based on an input value.
+**React** + **Node.js** + **MongoDB** web app that collects and stores HIS, ADI, and Altitude data. The frontend display the data in two different ways:<br>
+- **Text:** Which show 3 containers with the data.<br>
+- **Visual:** Which visually show a compass, a filling bar for the altitude, and a view panel for the ADI.<br>
+the variables are also sent to the backend, which saves it in MongoDB
 
 ## Features✨
 - **Dynamic Altitude Bar:** Shows a gradient from green to red with a white overlay that reveals based on the altitude parameter.
@@ -22,7 +22,7 @@ This project demonstrates a visual instrument panel built with React and CSS. It
 - MongoDB connection string
 - Clone the repository
 ### First time running the frontend
-Create a file named `.env` inside the frontend folder and paste there `PORT=http://localhost:8080`, you can replace the `8080` with any port number
+Create a file named `.env` inside the frontend folder and paste `PORT=http://localhost:8080` there, you can replace the `8080` with any port number
 ```sh
 - cd frontend
 - npm install
@@ -34,8 +34,8 @@ Create a file named `.env` inside the frontend folder and paste there `PORT=http
 - npm start
 ```
 ### First time running the backend
-Create a file named `.env` inside the backend folder and paste there `PORT=8080`, you can replace the `8080` with any port number<p>
-Also paste there `MONGO_URI=YOUR_CONNECTION_STRING`
+Create a file named `.env` inside the backend folder and paste there `PORT=8080`, you can replace the `8080` with any port number<br>
+Also paste `MONGO_URI=YOUR_CONNECTION_STRING` there
 ```sh
 - cd backend
 - npm install express mongoose cors body-parser dotenv
