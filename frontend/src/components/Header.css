@@ -1,10 +1,14 @@
 .Header {
-    padding-top: 2em;
-    text-align: center;
+    /* Text */
     color: #000;
 
-}
+    /* Placement */
+    margin-top: 10em;
+    text-align: center;
+    
 
+}
+    
 h1 {
     font-size: 4rem;
     padding: 0;

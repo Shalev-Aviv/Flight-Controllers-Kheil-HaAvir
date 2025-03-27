@@ -58,7 +58,15 @@
 }
 #Send {
     /*Background*/
-    background-color: blue;
+    background-color: rgb(0, 183, 255);
+    transition: 500ms ease-in-out;
+}
+#Send:hover {
+    background-color: rgb(0, 135, 193);
+    transition: 500ms ease-in-out;
+}
+#Send:active {
+    background-color: aqua;
 }
 #Reset {
     color: #000;
@@ -66,4 +74,10 @@
     background-color: transparent;
     border-width: 1px;
     border-style: solid;
+    transition: 500ms ease-in-out;
+}
+#Reset:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 500ms ease-in-out;
 }

@@ -11,9 +11,9 @@ function PlusContent({ onSend }: PlusContentProps) {
     const [adiInput, setAdiInput] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    const handleSendClick = () => {
+    const handleSendClick = async () => {
         setErrorMessage('');
-
+        
         if (!altitudeInput || !hisInput || !adiInput) {
             setErrorMessage('Please fill in all three fields.');
             return;
@@ -38,7 +38,21 @@ function PlusContent({ onSend }: PlusContentProps) {
             return;
         }
 
-        onSend(altitudeInput, hisInput, adiInput); // Pass the input values to Controller
+        // Send data to backend
+        try {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/data`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ HIS: hisValue, ADI: adiValue, Altitude: altitudeValue })
+            });
+            const result = await response.json();
+            console.log(result);
+        }
+        catch (error) {
+            console.error("Error sending data:", error);
+        }
+
+        onSend(altitudeInput, hisInput, adiInput); // Pass the input values to Controller if needed
     };
 
     const handleResetClick = () => {

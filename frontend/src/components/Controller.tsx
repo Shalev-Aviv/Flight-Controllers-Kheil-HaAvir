@@ -8,8 +8,7 @@ function Controller() {
   const [activeContent, setActiveContent] = useState<React.ReactNode | null>(null);
   const [altitudeValue, setAltitudeValue] = useState('');
   const [hisValue, setHisValue] = useState('');
-  const [adiValue, setAdiValue] = useState('');
-
+  const [adiValue, setAdiValue] = useState(''); 
   const handlePlusSend = (altitude: string, his: string, adi: string) => {
     setAltitudeValue(altitude);
     setHisValue(his);

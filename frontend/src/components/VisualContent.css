@@ -70,7 +70,6 @@
     text-align: center;
     
 }
-
 #first {
     top: 5%;
     left: 50%;
@@ -110,7 +109,7 @@
         to bottom,
         cyan 0%,
         blue var(--adi-threshold),
-        rgb(120, 59, 31) var(--adi-threshold),
-        rgb(165, 81, 42) 100%
+        rgb(40, 120, 31) var(--adi-threshold),
+        rgb(63, 165, 42) 100%
     );
 }
