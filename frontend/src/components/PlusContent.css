@@ -1,0 +1,69 @@
+.Data {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1em;
+}
+
+.Infos {
+    display: grid;
+}
+.Info {
+    /*Bacground*/
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 10px 20px;
+
+    /*Spacing*/
+    margin: 0.5em 0;
+}
+
+.Inputs {
+    display: grid;
+}
+.Input {
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 10px 20px;
+    /*Spacing*/
+    margin-bottom: 0.2em;
+    border: 1px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 0.5em;
+}
+.Input-description {
+    font-size: 0.5em;
+    color: #555;
+}
+
+.CTAs {
+    display: flex; /* Enable Flexbox for the container */
+    justify-content: center; /* Center items horizontally */
+    gap: 1em; /* Optional: Add some space between the buttons */
+    margin-top: 1em; /* Optional: Add some top margin to separate from the inputs */
+}
+
+.CTA {
+    /*Text*/
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    /*Background*/
+    border-radius: 100em; /*to validate circular corners*/
+    padding: 0.5em 1em;
+    border: none;
+
+    /*Cursor shape*/
+    cursor: pointer;
+}
+#Apply {
+    /*Background*/
+    background-color: blue;
+}
+#Reset {
+    color: #000;
+    /*Background*/
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+}

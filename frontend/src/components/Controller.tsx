@@ -34,7 +34,7 @@ function Controller() {
             {activeContent}
           </div>
         </div>
-      );
-    }
+    );
+}
     
-    export default Controller;
+export default Controller;

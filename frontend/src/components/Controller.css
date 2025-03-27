@@ -5,10 +5,7 @@
 
     /*Background*/
     background-color: #f0f0f0;
-    padding-top: 1em;
-    padding-bottom: 3em;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 1em 2em;
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
