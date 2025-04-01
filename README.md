@@ -17,7 +17,7 @@ the variables are also sent to the backend, which saves it in MongoDB
 - **DataBase:** MongoDB
 
 ## Installation & Usage
-### Prerequisties
+### Prerequisites
 - Node.js & npm
 - MongoDB connection string
 - Clone the repository
@@ -34,8 +34,8 @@ Create a file named `.env` inside the frontend folder and paste `PORT=http://loc
 - npm start
 ```
 ### First time running the backend
-Create a file named `.env` inside the backend folder and paste there `PORT=8080`, you can replace the `8080` with any port number<br>
-Also paste `MONGO_URI=YOUR_CONNECTION_STRING` there
+Create a file named `.env` inside the backend folder and paste `PORT=8080`, you can replace the `8080` with any port number<br>
+Also, paste `MONGO_URI=YOUR_CONNECTION_STRING` there
 ```sh
 - cd backend
 - npm install express mongoose cors body-parser dotenv
@@ -43,6 +43,7 @@ Also paste `MONGO_URI=YOUR_CONNECTION_STRING` there
 ```
 ### Next time running the backend
 ```sh
+- cd backend
 - node server.js
 ```
 
